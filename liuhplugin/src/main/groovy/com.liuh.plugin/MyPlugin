@@ -1,0 +1,13 @@
+package com.liuh.plugin //配置文件中一直没能找到这个class文件，最后发现是这里少了package
+
+import org.gradle.api.Plugin
+import org.gradle.api.Project
+
+class MyPlugin implements Plugin<Project> {
+    @Override
+    void apply(Project project) {
+        System.out.println("========================")
+        System.out.println("hello gradle plugin!")
+        System.out.println("========================")
+    }
+}
